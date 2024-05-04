@@ -1,0 +1,13 @@
+<script>
+    // Font Color
+    const fontColorSelect = document.getElementById('fontColorSelect');
+    fontColorSelect.addEventListener('input', function () {
+        document.body.style.color = this.value;
+    });
+
+    // Character Color
+    const charColorSelect = document.getElementById('charColorSelect');
+    charColorSelect.addEventListener('input', function () {
+        document.body.style.color = this.value;  // This line conflicts with the font color control
+    });
+</script>
